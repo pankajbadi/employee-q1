@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:email="http://www.mulesoft.org/schema/mule/email" xmlns:batch="http://www.mulesoft.org/schema/mule/batch"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
+http://www.mulesoft.org/schema/mule/email http://www.mulesoft.org/schema/mule/email/current/mule-email.xsd">
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="0b8d4d7e-5d80-497e-ac11-a8b32a95b15e" >
+		<db:my-sql-connection host="${Database.Host}" port="${Database.Port}" user="${Databse.User}" password="${Databse.Password}" database="${Database.Databse}"/>
+	</db:config>
+	<email:smtp-config name="Email_SMTP" doc:name="Email SMTP" doc:id="f1f5e1cc-f619-4221-8283-49f9a056c206" >
+		<email:smtp-connection host="smtp.gmail.com" port="587" user="pankaj.badi@apisero.com" password="Pankaj@22" />
+	</email:smtp-config>
+	<flow name="employee_database_implementationFlow2" doc:id="953401e4-1a42-45ec-8123-a869a3750119" >
+		<batch:job jobName="employee_database_implementationBatch_Job" doc:id="6ee3cf99-70aa-46a0-8469-6152622de743" >
+			<batch:process-records >
+				<batch:step name="Batch_Step" doc:id="e2ef1c2f-0b2d-40c4-8b42-d35275ddcf22" >
+					<db:select doc:name="Select" doc:id="675c1c20-812e-4f2c-aebe-842d1b212f9c" config-ref="Database_Config">
+						<db:sql >select * from employee</db:sql>
+					</db:select>
+				</batch:step>
+			</batch:process-records>
+			<batch:on-complete >
+				<ee:transform doc:name="Transform Message" doc:id="6f00a4fa-d54e-4df8-b778-31c58db285f5" >
+					<ee:message >
+						<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+					</ee:message>
+				</ee:transform>
+			</batch:on-complete>
+		</batch:job>
+		<email:send doc:name="Send" doc:id="316bb54b-4079-483b-9185-e7d0066c49a7" config-ref="Email_SMTP" fromAddress="pankaj.badi@apisero.com">
+			<email:to-addresses >
+				<email:to-address value="pankaj.badi@apisero.com" />
+			</email:to-addresses>
+		</email:send>
+	</flow>
+	<flow name="employee_database_implementationFlow1" doc:id="b810a22d-4ed0-4764-b9da-74d7764cfaf5" >
+		<batch:job jobName="employee_database_implementationBatch_Job1" doc:id="5e784309-a2d8-4499-b9fb-b538dbb96401" >
+			<batch:process-records >
+				<batch:step name="Batch_Step1" doc:id="0b1dbe43-57fa-4160-b360-4316ba6bef20" >
+					<db:insert doc:name="Insert" doc:id="08add46e-cf27-447b-92d7-43cbc9ef5bc3" config-ref="Database_Config">
+			<db:sql>Insert into  employee_name=: employee_name , id=:id</db:sql>
+		</db:insert>
+				</batch:step>
+			</batch:process-records>
+			<batch:on-complete >
+				<ee:transform doc:name="Transform Message" doc:id="32f55e74-47da-47e9-8037-a446f1d96854">
+			<ee:message>
+				<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+			</batch:on-complete>
+		</batch:job>
+		<email:send doc:id="4f2d016b-1fa1-4d9a-ab35-235b3087d3db" config-ref="Email_SMTP">
+			<email:to-addresses >
+				<email:to-address value="pankaj.badi@apisero.com" />
+				<email:to-address />
+			</email:to-addresses>
+			<email:headers ><![CDATA[#[output application/java
+---
+{
+	"" : ""
+}]]]></email:headers>
+		</email:send>
+	</flow>
+</mule>

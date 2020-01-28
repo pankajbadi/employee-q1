@@ -1,0 +1,30 @@
+#%RAML 1.0
+version: v1
+title: Employee Database 
+types:
+  Customer: !include datatype/EmployeeDataType.raml
+  CustomErrorMessage: !include datatype/EmployeeErrorMessageDataType.raml
+/employee:
+  get:
+    description: Retrieves employee details
+    displayName: Get 
+    headers:
+      id:
+        required: true
+      employee_name:
+        required: true
+    responses:
+      200:
+        body:
+          application/json:
+            example: !include examples/EmployeeExample.raml
+      404:
+        body:
+          application/json:
+            example: !include examples/EmployeeErrorMessageExample.raml
+  post:
+    description: post all employee details
+    displayName: Post all employee
+    body:
+      application/json:
+        example: !include examples/EmployeeExample.raml
