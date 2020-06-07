@@ -1,0 +1,361 @@
+i/p
+[
+  [
+    {
+      "ProjectID": 1215489,
+      "ProjectName": "Keep Truckin",
+      "HoursBooked": 40.0,
+      "ClientName": "Keep Truckin",
+      "resources_name": "Mustafa kukshiwala"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1214789,
+      "ProjectName": "Abaco",
+      "HoursBooked": 40.0,
+      "ClientName": "Abaco",
+      "resources_name": "Rucha Khisti"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1355900,
+      "ProjectName": "ABC",
+      "HoursBooked": 15.0,
+      "ClientName": "ABC",
+      "resources_name": "Mark Levinson"
+    },
+    {
+      "ProjectID": 1209845,
+      "ProjectName": "2U",
+      "HoursBooked": 0.0,
+      "ClientName": "2U",
+      "resources_name": "Mark Levinson"
+    },
+    {
+      "ProjectID": 1209782,
+      "ProjectName": "Blend Labs",
+      "HoursBooked": 10.0,
+      "ClientName": "Blend Labs",
+      "resources_name": "Mark Levinson"
+    },
+    {
+      "ProjectID": 1239560,
+      "ProjectName": "Newell ",
+      "HoursBooked": 25.0,
+      "ClientName": "Newell",
+      "resources_name": "Mark Levinson"
+    },
+    {
+      "ProjectID": 1215535,
+      "ProjectName": "Bella Canvas",
+      "HoursBooked": 15.0,
+      "ClientName": "Bella Canvas",
+      "resources_name": "Mark Levinson"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1263817,
+      "ProjectName": "JDA India",
+      "HoursBooked": 40.0,
+      "ClientName": "JDA-India",
+      "resources_name": "Ramesh Thombre"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1215534,
+      "ProjectName": "Tradeshift",
+      "HoursBooked": 40.0,
+      "ClientName": "Tradeshift",
+      "resources_name": "Swetha Bokka"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1362644,
+      "ProjectName": "Website Virtual Visitor Tracking",
+      "HoursBooked": 20.0,
+      "ClientName": "Apisero Internal",
+      "resources_name": "Ishu Agrawal"
+    },
+    {
+      "ProjectID": 1362605,
+      "ProjectName": "Apisero Rewards Program",
+      "HoursBooked": 20.0,
+      "ClientName": "Apisero Internal",
+      "resources_name": "Ishu Agrawal"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1254455,
+      "ProjectName": "Flexcare",
+      "HoursBooked": 40.0,
+      "ClientName": "Flexcare",
+      "resources_name": "Kuldeep Rana"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1209815,
+      "ProjectName": "MRCGlobal",
+      "HoursBooked": 40.0,
+      "ClientName": "MRCGlobal",
+      "resources_name": "Akash Manollimath"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1215489,
+      "ProjectName": "Keep Truckin",
+      "HoursBooked": 40.0,
+      "ClientName": "Keep Truckin",
+      "resources_name": "Dilip Kumar"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1263281,
+      "ProjectName": "Cascade Financial",
+      "HoursBooked": 40.0,
+      "ClientName": "Cascade Financial",
+      "resources_name": "Shwetali Pawar"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1362644,
+      "ProjectName": "Website Virtual Visitor Tracking",
+      "HoursBooked": 20.0,
+      "ClientName": "Apisero Internal",
+      "resources_name": "Ishu Agrawal"
+    },
+    {
+      "ProjectID": 1362605,
+      "ProjectName": "Apisero Rewards Program",
+      "HoursBooked": 20.0,
+      "ClientName": "Apisero Internal",
+      "resources_name": "Ishu Agrawal"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1240850,
+      "ProjectName": "CCconnectors",
+      "HoursBooked": 40.0,
+      "ClientName": "Mulesoft",
+      "resources_name": "Hussain Munaim"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1209784,
+      "ProjectName": "JDA",
+      "HoursBooked": 40.0,
+      "ClientName": "JDA-USA",
+      "resources_name": "Saranya Ravi"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1362270,
+      "ProjectName": "UCSD",
+      "HoursBooked": 40.0,
+      "ClientName": "UCSD",
+      "resources_name": "Akash Shewale"
+    },
+    {
+      "ProjectID": 1209784,
+      "ProjectName": "JDA",
+      "HoursBooked": 40.0,
+      "ClientName": "JDA-USA",
+      "resources_name": "Akash Shewale"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1209784,
+      "ProjectName": "JDA",
+      "HoursBooked": 40.0,
+      "ClientName": "JDA-USA",
+      "resources_name": "AnandhaGuru Vijaysarathi"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1209784,
+      "ProjectName": "JDA",
+      "HoursBooked": 40.0,
+      "ClientName": "JDA-USA",
+      "resources_name": "Vijay  Deshmukh"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1278550,
+      "ProjectName": "Revance",
+      "HoursBooked": 40.0,
+      "ClientName": "Revance",
+      "resources_name": "Ritendra Dhakciya"
+    },
+    {
+      "ProjectID": 1209784,
+      "ProjectName": "JDA",
+      "HoursBooked": 40.0,
+      "ClientName": "JDA-USA",
+      "resources_name": "Ritendra Dhakciya"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1209784,
+      "ProjectName": "JDA",
+      "HoursBooked": 40.0,
+      "ClientName": "JDA-USA",
+      "resources_name": "Abhiraj P"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1369114,
+      "ProjectName": "NetSmart",
+      "HoursBooked": 40.0,
+      "ClientName": "NetSmart ",
+      "resources_name": "Saurabh Deshmukh"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1214797,
+      "ProjectName": "Chargepoint",
+      "HoursBooked": 1.5,
+      "ClientName": "Chargepoint",
+      "resources_name": "Kiran  Vasu"
+    },
+    {
+      "ProjectID": 1254455,
+      "ProjectName": "Flexcare",
+      "HoursBooked": 10.0,
+      "ClientName": "Flexcare",
+      "resources_name": "Kiran  Vasu"
+    },
+    {
+      "ProjectID": 1209826,
+      "ProjectName": "ELF",
+      "HoursBooked": 5.0,
+      "ClientName": "ELF",
+      "resources_name": "Kiran  Vasu"
+    },
+    {
+      "ProjectID": 1369114,
+      "ProjectName": "NetSmart",
+      "HoursBooked": 5.0,
+      "ClientName": "NetSmart ",
+      "resources_name": "Kiran  Vasu"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1369114,
+      "ProjectName": "NetSmart",
+      "HoursBooked": 40.0,
+      "ClientName": "NetSmart ",
+      "resources_name": "Surya Kiran Chittiboyana"
+    }
+  ],
+  [
+    
+  ],
+  [
+    {
+      "ProjectID": 1215531,
+      "ProjectName": "FourKites",
+      "HoursBooked": 40.0,
+      "ClientName": "FourKites",
+      "resources_name": "Harsh Anand"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1240850,
+      "ProjectName": "CCconnectors",
+      "HoursBooked": 40.0,
+      "ClientName": "Mulesoft",
+      "resources_name": "Neha Sharma"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1240850,
+      "ProjectName": "CCconnectors",
+      "HoursBooked": 40.0,
+      "ClientName": "Mulesoft",
+      "resources_name": "Neelam Deshmukh"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1209784,
+      "ProjectName": "JDA",
+      "HoursBooked": 40.0,
+      "ClientName": "JDA-USA",
+      "resources_name": "Monil Porwal"
+    },
+    {
+      "ProjectID": 1362778,
+      "ProjectName": "Zoho People Integration with Google Sheet",
+      "HoursBooked": 5.0,
+      "ClientName": "Apisero Internal",
+      "resources_name": "Monil Porwal"
+    }
+  ],
+  [
+    {
+      "ProjectID": 1209784,
+      "ProjectName": "JDA",
+      "HoursBooked": 40.0,
+      "ClientName": "JDA-USA",
+      "resources_name": "Sanjeet Dahake"
+    }
+  ],
+  [
+    
+  ],
+  [
+    {
+      "ProjectID": 1362637,
+      "ProjectName": "Timesheet Integration from Zoho People to Quickbooks and Invoice Generation",
+      "HoursBooked": 40.0,
+      "ClientName": "Apisero Internal",
+      "resources_name": "Nishant Banga"
+    }
+  ],
+  [
+    
+  ],
+  [
+    {
+      "ProjectID": 1317887,
+      "ProjectName": "HealthPay24",
+      "HoursBooked": 5.0,
+      "ClientName": "HealthPay24",
+      "resources_name": "Shivakant Sahu"
+    }
+  ],
+  [
+    
+  ]
+]
+
+
+---------------
+
+
+%dw 2.0
+output application/json
+var a= flatten((payload map((item,index)->item.ProjectID)))
+---
+(flatten(payload)) filter ((item, index) -> item.ProjectID ~= item.ProjectID)
